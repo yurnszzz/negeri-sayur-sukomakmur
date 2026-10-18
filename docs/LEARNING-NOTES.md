@@ -163,43 +163,22 @@ Tautan yang membuka tab baru memakai `rel="noopener noreferrer"`. Panah dekorati
 
 Instruksi mini project meminta layout HTML/CSS beserta tautan dan form, tetapi tidak secara khusus mewajibkan JavaScript, aplikasi mobile, atau breakpoint tertentu. **Responsif** berarti susunan website menyesuaikan layar desktop/ponsel. **Interaktif** berarti pengguna dapat melakukan tindakan, misalnya berpindah bagian, membuka tautan, membuka menu ponsel/kredit foto, atau mencoba validasi form. Keduanya dapat diwujudkan di proyek ini dengan HTML dan CSS saja.
 
-## Pemeriksaan dan status skill
+## Pemeriksaan
 
-Evaluasi 18 Oktober 2026 menyempurnakan proporsi pembuka, header, dan rekomendasi berdasarkan masukan pengguna. Warna kertas dan hijau, Georgia/Arial, dua logo asli, bingkai foto, serta perilaku tanpa JavaScript dipertahankan. [Ulasan desain](DESIGN-REVIEW.md) mencatat penilaian, perubahan, dan hasil pemeriksaan. Riwayat evaluasi 17 Oktober dipisahkan dari pemeriksaan revisi ini.
+Pemeriksaan terakhir dilakukan pada 18 Oktober 2026 di Chrome Windows dengan JavaScript halaman dinonaktifkan.
 
-| Before | After | Why |
-| --- | --- | --- |
-| Judul hero mencapai 96 px dan foto sangat dominan | Judul maksimal 64 px; hero dibatasi 1100 px dengan kolom 1,85:1 | Pembuka lebih proporsional tanpa menghilangkan nama destinasi. |
-| Foto hero mengisi bingkai 16:10 dengan crop | Foto mengikuti rasio asli 1600:1067 dan tampil utuh | Lanskap tidak kehilangan bagian tepi; ukuran bingkai lebih terkendali. |
-| Catatan lokasi dan CTA menempel ke bawah foto | Catatan sejajar tengah di desktop; berada setelah foto pada ponsel | Teks terasa menyatu dengan bingkai dan urutan baca lebih jelas. |
-| Header desktop besar dan menu dipaksa membungkus di ponsel | Header tertutup sekitar 60 px; ponsel memiliki disclosure Menu/Tutup sendiri | Menghemat ruang dengan target sentuh tetap minimal 44 px. |
-| Tautan navigasi tampak rata | Latar hover/fokus, aksen Kontak, serta penanda tujuan anchor | Pengguna memperoleh petunjuk interaksi tanpa gerak dekoratif. |
-| Tiga baris rekomendasi dengan gambar kecil | Tiga bingkai besar berjajar; satu kolom pada ponsel | Mengikuti preferensi pengguna agar foto destinasi lebih terlihat. |
-| Footer memiliki tulisan kembali ke atas | Tautan tulisan tersebut dihapus; logo header tetap menuju awal | Footer lebih ringkas sesuai evaluasi pengguna. |
-
-| Pemeriksaan | Hasil |
+| Area | Hasil dan cakupan |
 | --- | --- |
-| Dokumen tugas | Prompt proyek, instruksi mini project, dan materi SCFE Basic P1–P4 sudah dibaca. |
-| Sumber dan ekspor, 18 Oktober 2026 | Sumber lolos 35/35 dan HTML ekspor 37/37. Diperiksa melalui `file://` pada lebar 1440, 768, 390, dan 320 px dengan JavaScript dinonaktifkan: delapan gambar lokal, satu CSS, anchor, overflow, fokus keyboard, reduced motion, serta validasi dan submit GET formulir. |
-| Navbar, 18 Oktober 2026 | 84/84 pemeriksaan lolos, termasuk menu yang benar-benar tampil pada desktop/ponsel, anchor dan keyboard, keadaan menempel/mengambang, reduced motion, serta simulasi fallback animasi scroll di Chrome. |
-| Proporsi dan menu, 18 Oktober 2026 | 66/66 pemeriksaan tambahan lolos pada viewport 1440 × 900, 1366 × 768, 768 × 1024, 390 × 844, dan 320 × 760. Cakupannya meliputi Menu/Tutup melalui keyboard serta simulasi mouse/sentuhan, ruang anchor saat menu terbuka, rasio asli foto hero, judul maksimal 64 px, catatan sejajar tengah, bingkai hero utuh pada viewport desktop, kolom rekomendasi, dan tidak adanya tautan tulisan kembali ke atas di footer. |
-| Tinjauan visual, 18 Oktober 2026 | Peninjauan independen screenshot tidak menemukan masalah visual pada area revisi. Header tertutup berukuran sekitar 60 px; bingkai foto hero sekitar 683 px pada viewport 1440 px. |
-| Riwayat pemeriksaan 17 Oktober 2026 | Sumber versi sebelumnya lolos 35/35, ekspor 37/37, dan navbar 84/84. Chrome melalui `file://` diperiksa pada lebar 1440, 768, 390, dan 320 px dengan JavaScript dinonaktifkan. Angka ini tidak digunakan sebagai hasil revisi 18 Oktober. |
-| Screenshot | [Hero](media/preview-hero.png), [desktop](media/preview-desktop.png), [ponsel](media/preview-mobile.png), dan [menu ponsel terbuka](media/preview-mobile-menu.png) mendokumentasikan revisi 18 Oktober. [Pembuka sebelumnya](media/preview-before-proportion.png) menjadi pembanding. |
-| Batas pengujian | Chrome Windows dengan JavaScript dinonaktifkan; Safari/Firefox, perangkat fisik, pembaca layar, dan zoom browser 200% belum diuji. Simulasi sentuhan/fallback di Chrome tidak sama dengan pengujian perangkat atau browser lain. |
-| Repository dan deployment | Repository tujuan [yurnszzz/negeri-sayur-sukomakmur](https://github.com/yurnszzz/negeri-sayur-sukomakmur), branch utama `main`. GitHub Pages dan workflow deployment belum dikonfigurasi. |
+| Halaman utama | 35/35 pemeriksaan umum lolos pada lebar 1440, 768, 390, dan 320 px melalui file lokal. Delapan gambar lokal dan satu CSS termuat; tidak ditemukan overflow halaman, ID ganda, anchor hilang, atau field tanpa label. |
+| Paket pengumpulan | 37/37 pemeriksaan lolos pada HTML ekspor, termasuk dua pemeriksaan header SVG dokumentasi. |
+| Navigasi | 84/84 pemeriksaan lolos: sticky, perubahan mengambang saat scroll, tujuan anchor, keyboard, reduced motion, dan simulasi fallback tanpa animasi scroll. |
+| Proporsi dan menu ponsel | 66/66 pemeriksaan tambahan lolos pada viewport 1440 × 900, 1366 × 768, 768 × 1024, 390 × 844, dan 320 × 760. Menu dicoba melalui keyboard, mouse, dan sentuhan simulasi; heading tujuan tetap terlihat saat menu terbuka. Foto hero mengikuti rasio asli dan tiga rekomendasi menyesuaikan kolomnya. |
+| Form dan kredit foto | Form memblokir isian kosong/email tidak valid dan menerima data contoh valid melalui GET. Kredit foto dapat dibuka dan ditutup menggunakan keyboard. |
+| Batas pengujian | Safari, Firefox, perangkat fisik, pembaca layar, dan zoom browser 200% belum diuji. Simulasi sentuhan/fallback di Chrome bukan pengujian browser atau perangkat lain. |
 
-**Taste Skill** tersedia di [SKILL.md](../.agents/skills/design-taste-frontend/SKILL.md). Pada revisi 18 Oktober, perhatian diarahkan pada proporsi judul terhadap foto, foto hero yang utuh, serta hubungan catatan dengan bingkai. Tiga rekomendasi besar mengikuti preferensi pengguna. Lint revisi ini menghasilkan 17 FAIL dan 4 WARN; inspector browser menghasilkan 6 kategori FAIL dan 8 kategori WARN. Material kertas, bingkai, serta bentuk kontrol dipertahankan sesuai konteks desain. Temuan focal-point meminta judul atau foto diperbesar, bertentangan dengan permintaan terbaru pengguna; proporsi baru dipertahankan setelah ditinjau pada screenshot. Sebagai riwayat, lint 17 Oktober menghasilkan 14 FAIL dan 5 WARN; inspector browser saat itu menghasilkan 6 FAIL dan 9 WARN. Pemeriksaan mempertimbangkan brief, batas tanpa JavaScript, serta tabel yang perlu bergulir pada ponsel; bukan klaim lolos seluruh aturan estetika skill. Rincian ada di [ulasan desain](DESIGN-REVIEW.md).
+Screenshot hasil: [hero](media/preview-hero.png), [desktop](media/preview-desktop.png), [ponsel](media/preview-mobile.png), dan [menu ponsel terbuka](media/preview-mobile-menu.png).
 
-**UI UX Pro Max** tersedia di [SKILL.md](../.agents/skills/ui-ux-pro-max/SKILL.md). Panduan navigasi, ukuran target sentuh, fokus keyboard, form, responsivitas, dan reduced motion dibaca dan digunakan. Penerapannya tetap memakai HTML/CSS native.
-
-**Impeccable** berasal dari repository resmi `pbakaus/impeccable` dan tersedia di [SKILL.md](../.agents/skills/impeccable/SKILL.md). Revisi 18 Oktober meninjau hierarki, proporsi, keterbacaan navigasi, dan penyesuaian khusus ponsel. Pemindaian dengan lingkup layout menghasilkan satu warning padding aktivitas yang dinilai false positive setelah ditinjau dalam konteks pembungkusnya. Pada evaluasi sebelumnya tanggal 17 Oktober, dua agen menilai desain dan bukti detektor secara independen; pemindaian saat itu turun dari 12 temuan menjadi 5 warning. Lingkup kedua pemindaian berbeda, sehingga angkanya tidak dibandingkan sebagai skor peningkatan. Tidak ada overlay browser yang ditampilkan; bukti visual berasal dari screenshot dan pemeriksaan Chrome. [Ulasan desain](DESIGN-REVIEW.md) memuat rincian dan batas metode.
-
-**Emil Design Engineering** dipasang dari repository `emilkowalski/skills` dan tersedia di [SKILL.md](../.agents/skills/emil-design-eng/SKILL.md). Skill utama yang dipilih adalah `emil-design-eng`. Prinsip yang digunakan: animasi memiliki tujuan, isi tidak berubah ukuran saat bergerak, perubahan scroll bersifat langsung, hover disesuaikan perangkat, dan preferensi reduced motion dihormati. Library animasi JavaScript dalam contoh skill tidak digunakan.
-
-Taste sudah tersedia sebelum evaluasi ini, sehingga tidak dipasang ganda. UI UX Pro Max serta skill pendukung lama dipertahankan. [AGENTS.md](../AGENTS.md) menyimpan preferensi pengguna dan panduan penggunaan empat skill utama untuk pekerjaan berikutnya. Semua skill bekerja saat pengembangan; browser pengunjung hanya membutuhkan HTML, CSS, dan gambar lokal.
-
-Izin terbaru pengguna untuk mencari keenam foto menggantikan larangan pencarian foto pada brief awal. Dua logo tetap berasal dari pengguna. Foto Pexels menunjukkan konteks kawasan; lokasi persis hanya disebut ketika sumber mendukungnya. Kredit dan lisensi berada di footer dan [ASSETS.md](ASSETS.md). Kode proyek berlisensi MIT, sedangkan foto, logo, dan skill mengikuti ketentuan masing-masing.
+Sumber, kredit, batas identifikasi lokasi, serta lisensi foto tercatat dalam [ASSETS.md](ASSETS.md). Logo tetap menjadi hak pembuat; foto mempertahankan lisensi sumbernya. Lisensi MIT proyek berlaku pada kode dan dokumentasi aslinya.
 
 ## Cara menjelaskan saat presentasi
 

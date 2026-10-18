@@ -1,6 +1,6 @@
 # Panduan aset
 
-Dua logo asli Hasan Shofiyyur Rahman dan **enam foto lokal sudah dipasang**. Izin terbaru pengguna untuk mencari keenam foto menggantikan ketentuan placeholder dalam brief awal. Tidak ada lagi gambar placeholder pada halaman.
+Dua logo asli Hasan Shofiyyur Rahman dan **enam foto lokal sudah dipasang**. Semua berkas yang digunakan website berada dalam folder `assets/images/`.
 
 Foto utama dan kebun berkabut menunjukkan konteks kawasan Sumbing/Magelang; sumbernya tidak memastikan desa persis. Foto jalur pengunjung terverifikasi sebagai Negeri Sayur Sukomakmur. Ketiga foto rekomendasi sesuai dengan destinasi masing-masing. Caption dan kredit halaman mempertahankan pembedaan ini.
 
@@ -24,7 +24,7 @@ Foto utama didahulukan pemuatannya; lima foto lainnya memakai `loading="lazy"`. 
 
 ### BRAND-01 — logo pengguna
 
-Pembuat: **Hasan Shofiyyur Rahman**. Sumber asli disimpan sebagai [logo horizontal](../logo-horizontal.svg) dan [logo simbol](../logo-simbol.svg). Salinan pada folder brand identik dengan sumber. Alt header: “Negeri Sayur Sukomakmur”; alt footer: “Simbol Negeri Sayur Sukomakmur”. Logo tidak dipotong, direntangkan, atau diubah bentuknya. Izin penggunaannya berasal dari pengguna untuk proyek ini; hak logo tidak otomatis menjadi MIT.
+Pembuat: **Hasan Shofiyyur Rahman**. Berkas website: [logo horizontal](../assets/images/brand/logo-horizontal.svg) dan [logo simbol](../assets/images/brand/logo-simbol.svg). Keduanya mempertahankan bentuk asli pembuat. Alt header: “Negeri Sayur Sukomakmur”; alt footer: “Simbol Negeri Sayur Sukomakmur”. Logo tidak dipotong, direntangkan, atau diubah bentuknya. Hak logo tetap milik pembuat dan tidak otomatis menjadi MIT.
 
 ### DEST-01 — lanskap lereng Sumbing
 
@@ -90,14 +90,14 @@ Kredit lengkap tersedia dalam `details#kredit-foto` pada footer, termasuk judul,
 3. Cari komentar `ASSET DEST-01` atau ID terkait pada `index.html`, lalu perbarui `src`, dimensi intrinsik, alt, dan caption.
 4. Perbarui kredit footer serta dokumen ini. Jika sumber hanya membuktikan kawasan sekitar, pertahankan batas identifikasi tersebut.
 5. Periksa crop desktop/ponsel dan proporsi logo. Perbarui screenshot README bila tampilan berubah.
-6. Ekspor ulang `submission/` dari sumber utama sesuai [README](../README.md#menyiapkan-paket-pengumpulan); jangan mengedit salinan secara terpisah.
+6. Ekspor ulang `submission/` dari sumber utama sesuai [README](../README.md); jangan mengedit salinan secara terpisah.
 
 ## Dokumentasi dan status pemeriksaan
 
-[Preview hero](media/preview-hero.png), [desktop penuh](media/preview-desktop.png), [ponsel penuh](media/preview-mobile.png), dan [menu ponsel terbuka](media/preview-mobile-menu.png) menampilkan implementasi 18 Oktober 2026 dengan enam foto. [Pembuka sebelum penyempurnaan proporsi](media/preview-before-proportion.png) serta [layout awal](media/preview-before-layout.jpg) disimpan sebagai pembanding.
+[Preview hero](media/preview-hero.png), [desktop penuh](media/preview-desktop.png), [ponsel penuh](media/preview-mobile.png), dan [menu ponsel terbuka](media/preview-mobile-menu.png) menampilkan implementasi 18 Oktober 2026 dengan enam foto.
 
 `docs/media/readme-header.svg` adalah ilustrasi dokumentasi buatan proyek, bukan logo atau foto destinasi. Teksnya terlihat pada frame statis; animasi garis jurnal berhenti saat reduced motion aktif.
 
 Pada 18 Oktober 2026, sumber dan paket pengumpulan diperiksa di Chrome pada lebar 1440, 768, 390, dan 320 px dengan JavaScript dinonaktifkan: sumber lolos 35/35 dan ekspor 37/37 pemeriksaan. Seluruh delapan gambar termuat. Pemeriksaan tambahan pada 1440, 1366, 768, 390, dan 320 px memastikan rasio asli hero, bingkai penuh pada viewport desktop, serta tiga kolom rekomendasi di desktop/tablet dan satu kolom pada ponsel. Crop dan screenshot ditinjau. Angka tersebut berasal dari Chrome Windows, bukan pengujian perangkat fisik atau browser lain.
 
-[Lisensi MIT](../LICENSE) berlaku pada kode serta dokumentasi asli proyek; tidak menggantikan hak logo, lisensi foto, atau lisensi skill. Lihat [lisensi pihak ketiga](THIRD-PARTY-LICENSES.md) dan [catatan pemeriksaan](DESIGN-REVIEW.md).
+[Lisensi MIT](../LICENSE) berlaku pada kode serta dokumentasi asli proyek; tidak menggantikan hak logo atau lisensi foto. Sumber dan lisensi setiap foto tercantum di atas dan pada footer halaman. Lihat juga [catatan pemeriksaan](LEARNING-NOTES.md#pemeriksaan).
