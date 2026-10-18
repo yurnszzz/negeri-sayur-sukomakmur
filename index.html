@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catatan perjalanan mengenal Negeri Sayur Sukomakmur di Magelang: cerita kebun terasering, aktivitas, dan panduan menyiapkan kunjungan.">
+  <meta name="theme-color" content="#24513f">
+  <title>Negeri Sayur Sukomakmur</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/logo-simbol.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="atas">
+  <a class="skip-link" href="#utama">Langsung ke konten</a>
+
+  <!-- Header: logo pengguna dan navigasi yang tetap terlihat tanpa JavaScript. -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="#atas" aria-label="Negeri Sayur Sukomakmur, kembali ke atas">
+        <!-- ASSET BRAND-01: logo horizontal asli, tampil utuh dengan contain. -->
+        <img src="assets/images/brand/logo-horizontal.svg" alt="Negeri Sayur Sukomakmur" width="1835" height="390">
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <ul class="nav-links">
+          <li><a href="#cerita">Cerita</a></li>
+          <li><a href="#aktivitas">Aktivitas</a></li>
+          <li><a href="#info">Info Kunjungan</a></li>
+          <li><a class="nav-contact" href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <!-- Ponsel: disclosure native agar menu ringkas dan tetap bekerja tanpa script. -->
+      <details class="mobile-menu">
+        <summary><span class="menu-label-open">Menu</span><span class="menu-label-close">Tutup</span><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navigasi utama ponsel">
+          <ul class="nav-links">
+            <li><a href="#cerita">Cerita</a></li>
+            <li><a href="#aktivitas">Aktivitas</a></li>
+            <li><a href="#info">Info Kunjungan</a></li>
+            <li><a class="nav-contact" href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="utama">
+    <!-- Hero: urutan HTML juga menjadi urutan baca di layar kecil. -->
+    <section class="hero container" aria-labelledby="judul-utama">
+      <h1 id="judul-utama">Negeri Sayur <em>Sukomakmur</em></h1>
+      <figure class="photo-print hero-photo">
+        <!-- ASSET DEST-01: foto pendukung kawasan Sumbing, bukan verifikasi lokasi persis Sukomakmur. Kredit di footer. -->
+        <img src="assets/images/destination/sukomakmur-hero.jpg" alt="Barisan tanaman dan kebun berterasering dengan Gunung Sumbing di latar belakang" width="1600" height="1067" fetchpriority="high">
+        <figcaption>Lanskap pertanian di lereng Sumbing, Magelang</figcaption>
+      </figure>
+      <div class="hero-note">
+        <p class="hero-location">Nampan, Kajoran<br>Magelang, Jawa Tengah</p>
+        <p class="hero-description">Di lereng Sumbing, kebun sayur berundak menyimpan cerita tentang tanah, ketekunan, dan kehidupan warga.</p>
+        <div class="hero-actions">
+          <a class="button" href="#info">Rencanakan Kunjungan</a>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Negeri+Sayur+Sukomakmur+Nampan+Kajoran+Magelang" target="_blank" rel="noopener noreferrer">Lihat Lokasi</a>
+        </div>
+        <p class="hero-footnote">Sebuah catatan perjalanan dari lereng Sumbing.</p>
+      </div>
+    </section>
+
+    <!-- Cerita: foto lokasi menjadi gambar utama; foto kawasan menjadi pendamping. -->
+    <section class="section container" id="cerita" aria-labelledby="judul-cerita">
+      <div class="story-layout">
+        <div class="story-copy">
+          <h2 id="judul-cerita">Ada kehidupan<br>di setiap <em>undakan.</em></h2>
+          <p>Negeri Sayur Sukomakmur berada di Dusun Nampan, Desa Sukomakmur, Kecamatan Kajoran, Kabupaten Magelang. Kebun sayur tersusun mengikuti lereng Gunung Sumbing, membentuk hamparan terasering yang menjadi ciri lanskapnya.</p>
+          <p>Di balik pemandangan itu, ada lahan yang dirawat dan kehidupan pertanian yang terus berjalan. Datanglah untuk menikmati suasananya sambil menghargai ruang kerja warga: tetap di jalur pengunjung dan minta izin sebelum mendekati lahan.</p>
+        </div>
+        <figure class="photo-print story-place">
+          <!-- ASSET DEST-03: lokasi Negeri Sayur Sukomakmur terverifikasi pada sumber Wikimedia Commons. -->
+          <img src="assets/images/destination/sukomakmur-jalur-tani.jpg" alt="Jalur pengunjung di antara kebun Negeri Sayur Sukomakmur, dengan gazebo dan Gunung Sumbing di belakangnya" width="720" height="571" loading="lazy">
+          <figcaption>Jalur pengunjung Negeri Sayur Sukomakmur</figcaption>
+        </figure>
+        <figure class="photo-print story-detail">
+          <!-- ASSET DEST-02: foto pendukung pertanian Magelang; desa persis belum terverifikasi. -->
+          <img src="assets/images/destination/sukomakmur-terasering.jpg" alt="Kebun berterasering dan pepohonan di Magelang dengan kabut menyelimuti lereng" width="1200" height="800" loading="lazy">
+          <figcaption>Kebun berterasering di Magelang, berselimut kabut</figcaption>
+        </figure>
+      </div>
+      <p class="source-note">Bacaan cerita: <a href="https://desa-sukomakmur.vercel.app/" target="_blank" rel="noopener noreferrer">profil desa oleh tim KKN</a> dan <a href="https://ppid.magelangkab.go.id/berita/harga-loncang-stabil-petani-sukomakmur-tetap-untung-di-musim-kemarau" target="_blank" rel="noopener noreferrer">cerita pertanian dari PPID Kabupaten Magelang</a>.</p>
+    </section>
+
+    <!-- Aktivitas menggunakan ul; langkah persiapan menggunakan ol. -->
+    <section class="activity-section" id="aktivitas" aria-labelledby="judul-aktivitas">
+      <div class="container activity-grid">
+        <div>
+          <h2 id="judul-aktivitas">Pelankan langkah.<br><em>Nikmati sekitarnya.</em></h2>
+          <ul class="activity-list">
+            <li><strong>Menikmati panorama</strong><p>Luangkan waktu mengamati pola terasering dan lanskap lereng Sumbing dari area pengunjung.</p></li>
+            <li><strong>Membawa pulang cerita lewat foto</strong><p>Ambil gambar dari jalur yang diperbolehkan, tanpa menginjak tanaman atau menghalangi jalan.</p></li>
+            <li><strong>Mengenal suasana pertanian</strong><p>Amati keseharian warga dengan sopan. Minta izin sebelum memotret orang dan hormati pekerjaan mereka.</p></li>
+          </ul>
+        </div>
+        <aside class="preparation-note" aria-labelledby="judul-persiapan">
+          <h3 id="judul-persiapan">Bekal perjalanan kecil</h3>
+          <ol class="preparation-list">
+            <li><strong>Cek informasi terlebih dahulu.</strong><p>Konfirmasikan akses, kondisi cuaca, dan ketentuan kunjungan kepada pengelola setempat.</p></li>
+            <li><strong>Siapkan yang perlu dibawa.</strong><p>Gunakan alas kaki yang nyaman; bawa air minum, pelindung hujan, dan kantong sampah sendiri.</p></li>
+            <li><strong>Ikuti jalur pengunjung.</strong><p>Patuhi petunjuk setempat dan jangan memasuki kebun tanpa izin pemilik lahan.</p></li>
+          </ol>
+          <p class="note-footer">Tinggalkan tempat sebaik saat kamu datang.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Informasi: data fasilitas dalam tabel semantik, dengan sumber historis. -->
+    <section class="section container" id="info" aria-labelledby="judul-info">
+      <div class="section-heading">
+        <div>
+          <h2 id="judul-info">Sebelum <em>berkunjung.</em></h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <aside class="location-note" aria-labelledby="judul-lokasi">
+          <div>
+            <h3 id="judul-lokasi">Alamat tujuan</h3>
+            <p class="location-address">Dusun Nampan, Desa Sukomakmur,<br>Kecamatan Kajoran, Kabupaten Magelang, Jawa Tengah.</p>
+          </div>
+          <div class="location-action">
+            <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Negeri+Sayur+Sukomakmur+Nampan+Kajoran+Magelang" target="_blank" rel="noopener noreferrer">Buka Google Maps</a>
+            <p class="location-reminder">Tarif, jam buka, dan kondisi akses perlu dikonfirmasi kepada pengelola sebelum kunjungan.</p>
+          </div>
+        </aside>
+        <div class="facilities">
+          <p class="table-hint" id="petunjuk-tabel">Pada layar kecil, geser tabel untuk melihat seluruh kolom.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Tabel fasilitas, dapat digulir horizontal" aria-describedby="petunjuk-tabel">
+            <table>
+              <caption>Fasilitas yang disebut dalam referensi</caption>
+              <thead>
+                <tr><th scope="col">Fasilitas</th><th scope="col">Kegunaan</th><th scope="col">Catatan</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Area parkir</th><td>Tempat menitipkan kendaraan saat berkunjung.</td><td>Ikuti arahan petugas dan penempatan kendaraan di lokasi.</td></tr>
+                <tr><th scope="row">Warung warga</th><td>Pilihan untuk membeli makanan dan minuman.</td><td>Ketersediaan menu dan waktu pelayanan dapat berubah.</td></tr>
+                <tr><th scope="row">Gazebo / tempat duduk</th><td>Tempat beristirahat di sela kunjungan.</td><td>Gunakan bergantian dan jaga kebersihan area bersama.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source-note">Merujuk <a href="https://koran-jakarta.com/2025-01-04/keelokan-terasering-pertanian-sayur-desa-sukomakmur-di-punggung-sumbing-yang-menyejukkan-hati/amp" target="_blank" rel="noopener noreferrer">Koran Jakarta, 4 Januari 2025</a>. Referensi diperiksa 16 Oktober 2026; kondisi dan ketersediaan fasilitas saat ini perlu dikonfirmasi kembali.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak: validasi HTML bawaan; submit GET adalah demonstrasi. -->
+    <section class="contact-section container" id="kontak" aria-labelledby="judul-kontak">
+      <div class="postcard">
+        <div class="postcard-copy">
+          <h2 id="judul-kontak">Tulis <em>catatan.</em></h2>
+          <p>Punya kesan tentang Sukomakmur atau masukan untuk website ini? Tuliskan catatanmu di formulir latihan ini.</p>
+          <div class="postcard-recipient">
+            <span class="recipient-label">Kepada pembuat website</span>
+            <strong>Hasan Shofiyyur Rahman</strong>
+            <a class="text-link" href="mailto:hasanshofiyyur@gmail.com">Kirim email</a>
+          </div>
+          <p class="source-note">Proyek belajar individu, bukan situs resmi pengelola wisata.</p>
+        </div>
+        <form action="#kontak" method="get" aria-describedby="catatan-form">
+          <p class="form-note" id="catatan-form"><strong>Form latihan; pesan belum dikirim.</strong> Semua kolom wajib diisi. Gunakan data contoh; isian hanya muncul pada URL setelah formulir dicoba.</p>
+          <div class="form-field">
+            <label for="nama">Nama</label>
+            <input id="nama" name="nama" type="text" placeholder="Contoh: Teman Perjalanan" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="contoh@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis catatan perjalanan atau masukanmu…" required></textarea>
+          </div>
+          <button class="button" type="submit">Coba Formulir</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Tiga pilihan setara: foto berjajar di desktop, satu kolom di ponsel. -->
+    <section class="section container recommendations" aria-labelledby="judul-rekomendasi">
+      <div class="section-heading">
+        <div>
+          <h2 id="judul-rekomendasi">Masih di <em>Magelang.</em></h2>
+        </div>
+        <p>Tiga tempat untuk kamu kenali lebih jauh.</p>
+      </div>
+      <div class="recommendation-list">
+        <a class="recommendation" href="https://visitjawatengah.jatengprov.go.id/id/artikel/menyusuri-pesona-nepal-van-java-surga-tersembunyi-di-magelang" target="_blank" rel="noopener noreferrer">
+          <!-- ASSET REC-01: foto Deprilsalucky, CC BY-SA 4.0; kredit lengkap di footer. -->
+          <img class="nepal-photo" src="assets/images/recommendations/nepal-van-java.jpg" alt="Rumah berwarna-warni Nepal van Java di lereng Gunung Sumbing, dikelilingi lahan pertanian dan awan" width="720" height="900" loading="lazy">
+          <h3>Nepal van Java</h3>
+          <p>Baca informasi destinasi</p>
+        </a>
+        <a class="recommendation" href="https://visitjawatengah.jatengprov.go.id/id/destinasi-wisata/ketep-pass" target="_blank" rel="noopener noreferrer">
+          <!-- ASSET REC-02: foto Ng Min Shen, CC BY-SA 3.0; kredit lengkap di footer. -->
+          <img src="assets/images/recommendations/ketep-pass.jpg" alt="Lembah hijau di antara Gunung Merapi dan Merbabu dilihat dari Ketep Pass" width="653" height="490" loading="lazy">
+          <h3>Ketep Pass</h3>
+          <p>Baca informasi destinasi</p>
+        </a>
+        <a class="recommendation" href="https://visitjawatengah.jatengprov.go.id/id/destinasi-wisata/punthuk-setumbu" target="_blank" rel="noopener noreferrer">
+          <!-- ASSET REC-03: foto Ridwan Adhitama, CC BY-SA 4.0; kredit lengkap di footer. -->
+          <img src="assets/images/recommendations/punthuk-setumbu.jpg" alt="Cahaya matahari terbit di balik Gunung Merapi dan Merbabu dari Punthuk Setumbu" width="1280" height="853" loading="lazy">
+          <h3>Punthuk Setumbu</h3>
+          <p>Baca informasi destinasi</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: identitas pembuat dan tautan yang diberikan pengguna. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <!-- ASSET BRAND-01 — varian simbol asli: assets/images/brand/logo-simbol.svg; jangan dipotong. -->
+          <img src="assets/images/brand/logo-simbol.svg" alt="Simbol Negeri Sayur Sukomakmur" width="672" height="672" loading="lazy">
+          <p>Catatan kecil dari Sukomakmur.<br><span>Dibuat oleh Hasan Shofiyyur Rahman.</span></p>
+        </div>
+        <nav class="footer-links" aria-label="Tautan pembuat">
+          <a href="https://portofolio-hasan-shofiyyur-rahman.vercel.app/" target="_blank" rel="noopener noreferrer">Portofolio</a>
+          <a href="https://www.instagram.com/yurnsz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:hasanshofiyyur@gmail.com">Email</a>
+        </nav>
+      </div>
+      <!-- Kredit dapat dibuka dengan mouse, sentuhan, atau keyboard tanpa JavaScript. -->
+      <details class="photo-credits" id="kredit-foto">
+        <summary>Kredit foto dan sumber</summary>
+        <p>Foto utama dan kebun berkabut menampilkan konteks kawasan Sumbing/Magelang. Foto jalur pengunjung menampilkan Negeri Sayur Sukomakmur.</p>
+        <ul>
+          <li>Foto utama: <a href="https://www.pexels.com/photo/scenic-terraced-fields-at-mount-sumbing-39985609/" target="_blank" rel="noopener noreferrer">Scenic Terraced Fields at Mount Sumbing</a> oleh Tri Martono AS, <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">Pexels License</a>.</li>
+          <li>Kebun berkabut: <a href="https://www.pexels.com/photo/foggy-terraced-fields-in-magelang-indonesia-36228487/" target="_blank" rel="noopener noreferrer">Foggy Terraced Fields in Magelang, Indonesia</a> oleh Cekrek Moment, <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">Pexels License</a>.</li>
+          <li>Jalur pengunjung: <a href="https://commons.wikimedia.org/wiki/File:Negeri_Sayur_Sukomakmur,_Kajoran.jpg" target="_blank" rel="noopener noreferrer">Negeri Sayur Sukomakmur, Kajoran</a> oleh Deprilsalucky, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+          <li>Nepal van Java: <a href="https://commons.wikimedia.org/wiki/File:Nepal_van_java2.jpg" target="_blank" rel="noopener noreferrer">Nepal van java2</a> oleh Deprilsalucky, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+          <li>Ketep Pass: <a href="https://commons.wikimedia.org/wiki/File:Ketep_Pass5.jpg" target="_blank" rel="noopener noreferrer">Ketep Pass5</a> oleh Ng Min Shen, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+          <li>Punthuk Setumbu: <a href="https://commons.wikimedia.org/wiki/File:Sunrise_di_punthuk_setumbu.jpg" target="_blank" rel="noopener noreferrer">Sunrise di punthuk setumbu</a> oleh Ridwanad (Ridwan Adhitama), <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+        </ul>
+        <p>Versi unduhan Pexels dan Punthuk Setumbu diperkecil oleh penyedia. Foto utama ditampilkan utuh; lima foto lainnya dipotong mengikuti bingkai. File tidak diedit lebih lanjut. Foto Creative Commons beserta penyesuaian tampilannya tetap mengikuti lisensi masing-masing.</p>
+      </details>
+      <div class="footer-bottom">
+        <p>© 2026 · Mini Project Frontend Basic — KSM Veterantech UPNVJ</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Hasil ekspor tugas; buat ulang dari index.html dan assets/css/style.css.
+/submission/
+
+# Dependency dan cache alat pengembangan, bukan bagian website.
+node_modules/
+/.tmp/
+/.taste-skill/
+.cache/
+cache/
+.npm/
+__pycache__/
+*.py[cod]
+*.log
+
+# Berkas sementara dan pengaturan editor lokal.
+*.tmp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# .agents/skills/ dan .codex/skills/ sengaja tetap dapat dilacak Git.
